@@ -20,16 +20,6 @@ def read_data_after_colon(filename):
     except FileNotFoundError:
         return None
 
-# Example usage:
-input_filename = 'mail.txt'
-data_to_insert = read_data_after_colon(input_filename)
-if data_to_insert:
-    print("Data to insert:")
-    print(data_to_insert)
-else:
-    print(f"File '{input_filename}' not found.")
-
-
 
 def insert_data_into_word(data, docx_filename):
     doc = Document()
@@ -39,8 +29,8 @@ def insert_data_into_word(data, docx_filename):
     print(f"Data has been placed in the file {docx_filename}")
 
 # Example usage:
-input_filename = 'mail.txt'
-output_docx_filename = 'output.docx'
+input_filename = ['file.txt']
+output_docx_filename = ['output.docx']
 data_to_insert = read_data_after_colon(input_filename)
 if data_to_insert:
     insert_data_into_word(data_to_insert, output_docx_filename)
