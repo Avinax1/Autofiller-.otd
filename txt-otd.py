@@ -60,6 +60,6 @@ def main(docx_path, odt_path):
 
 
 if __name__ == "__main__":
-    docx_path = 'output.docx'
-    odt_path = 'lektor_cloud_umowa.odt'
+    docx_path = ['input.docx']
+    odt_path = ['file.odt']
     main(docx_path, odt_path)
